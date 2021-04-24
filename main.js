@@ -1,0 +1,3 @@
+var Canvas = new fabric.Canvas("myCanvas"); var PlayerX =10 ; var PlayerY =10 ; var BlockImageWidth = 30; var BlockImageHeight = 30; var PlayerObject = ""; var BlockImageObject = "";
+function PlayerUpdate(){fabric.Image.fromURL("minecraft_skin.png",function(Img){PlayerObject=Img; PlayerObject.scaleToWidth(150); PlayerObject.scaleToHeight(140); PlayerObject.set({top: PlayerY, left: PlayerX});canvas.add(PlayerObject)})}
+function NewImage(getImage){fabric.Image.fromURL(getImage, function(Img){BlockImageObject=Img; BlockImageObject.scaleToWidth(BlockImageWidth); BlockImageHeight.scaleToHeight(BlockImageHeight); BlockImageObject.set({top: PlayerY, left: PlayerX});canvas.add(BlockImageObject)})}
